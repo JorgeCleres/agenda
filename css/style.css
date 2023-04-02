@@ -49,6 +49,8 @@
     color: #bd2130;
 }
 
+
+
 #empty-list-text {
     text-align: center;
 }
@@ -107,4 +109,14 @@
 
 #create-form button {
     margin-top: 10px;
+}
+
+#delete-form {
+    display: inline-block
+}
+
+@media(max-width: 480px) {
+    #home-link {
+        display: none;
+    }
 }

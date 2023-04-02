@@ -27,10 +27,15 @@
                             <td scoped="row"><?= $contact['fone'] ?></td>
                             <td class="actions">
                                 <a href="<?= $BASE_URL ?>show.php?id=<?= $contact['id'] ?>"><i class="fas fa-eye check-icon"></i></a>
-                                <a href="#"><i class="far fa-edit check-edir"></i></a>
-                                <button type="submit" class="delete-btn">
-                                    <i class="fas fa-times delete-icon"></i>
-                                </button>
+                                <a href="<?= $BASE_URL ?>edit.php?id=<?= $contact['id'] ?>"><i class="far fa-edit check-edir"></i></a>
+                                <form id="delete-form" action="<?= $BASE_URL ?>/config/process.php" method="post">
+                                    <input type="hidden" name="type" value="delete">
+                                    <input type="hidden" name="id" value="<?= $contact['id'] ?>">
+
+                                    <button type="submit" class="delete-btn">
+                                        <i class="fas fa-times delete-icon"></i>
+                                    </button>
+                                </form>
                             </td>
                         </tr>
                     <?php endforeach; ?>
