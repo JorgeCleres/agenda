@@ -30,13 +30,15 @@
 
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <a href="<?= $BASE_URL ?>index.php">
-            <img class="navbar-brand" src="<?= $BASE_URL ?>img/agenda.png" alt="logo agenda">
-        </a>
-        <div>
-            <div class="navbar-nav">
-                <a href="<?= $BASE_URL ?>index.php" id="home-link" class="nav-link active">Agenda</a>
-                <a href="<?= $BASE_URL ?>create.php" id="home-link" class="nav-link active">Criar Contato</a>
+        <div class="container">
+            <a href="<?= $BASE_URL ?>index.php">
+                <img class="navbar-brand" src="<?= $BASE_URL ?>img/agenda.png" alt="logo agenda">
+            </a>
+            <div>
+                <div class="navbar-nav">
+                    <a href="<?= $BASE_URL ?>index.php" id="home-link" class="nav-link active">Agenda</a>
+                    <a href="<?= $BASE_URL ?>create.php" id="home-link" class="nav-link active">Criar Contato</a>
+                </div>
             </div>
         </div>
     </nav>

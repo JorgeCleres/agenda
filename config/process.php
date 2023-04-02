@@ -5,10 +5,24 @@
     include_once('connection.php');
     include_once('url.php');
 
-    $query = "SELECT * FROM contacts";
+    $id;
 
-    $stmt = $conn->prepare($query);
+    if(!empty($_GET)) {
+        $id = $_GET['id'];
+    }
 
-    $stmt->execute();
-
-    $contacts = $stmt->fetchAll();
+    if(!empty($id)) {
+        //RETORNA UIM CONTATO
+        $query = "SELECT * FROM contacts WHERE id = :id";
+        $stmt = $conn->prepare($query);
+        $stmt->bindParam(":id", $id);
+        $stmt->execute();
+        $contact = $stmt->fetch();
+    } else {
+        //RETORNA TODOS OS CONTATOS
+        $contacts = [];
+        $query = "SELECT * FROM contacts";
+        $stmt = $conn->prepare($query);
+        $stmt->execute();
+        $contacts = $stmt->fetchall();
+    }

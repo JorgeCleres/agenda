@@ -1,3 +1,110 @@
 .navbar-brand {
     width: 50px;
 }
+
+#main-title{
+    text-align: center;
+    margin: 15px 0 30px;
+}
+
+#contacts-title {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#contacts-table thead {
+    color: #fff;
+    background-color: #007BFF;
+}
+
+.col-id {
+    font-weight: bold;
+}
+
+.actions {
+    text-align: center;
+    width: 150px
+}
+
+.actions i {
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.check-icon {
+    color: #1e7e34;
+}
+
+.edit-icon {
+    color: #00ebff;
+}
+
+.delete-btn {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+.delete-icon {
+    color: #bd2130;
+}
+
+#empty-list-text {
+    text-align: center;
+}
+
+#msg {
+    color: #155724;
+    background-color: #D4EDDA;
+    border: 1px solid #D4EDDA;
+    padding: 10px;
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+/*show  */
+
+#view-contact-container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.back-link-container {
+    display: block;
+    width: 500px;
+    margin: 20px auto 0;
+}
+
+#back-link {
+    border: 1px solid #007bff;
+    color: #007BFF;
+    border-radius: 4px;
+    padding: 5px;
+    text-decoration: none;
+}
+
+#back-link:hover{
+    text-decoration: none;
+}
+
+/* formulario */
+
+#create-form,
+#edit-form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#create-form input {
+    margin-bottom: 10px;
+}
+
+#create-form button {
+    margin-top: 10px;
+}
